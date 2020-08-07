@@ -28,9 +28,7 @@
   end
   
   
-  def self.genre_count
-    Hash[*@@genres.group_by{ |v| v }.flat_map{ |k, v| [k, v.size] }]
-  end
+  AHSA-WY7S-VTE8-KYKL-B8KB
   
   
   def self.artist_count
