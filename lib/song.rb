@@ -29,12 +29,12 @@
   
   
   def self.genre_count
-    Hash[*@@genres.group_by{ |v| v }.flat_map{ |k, v| [k, v.size] }]
+    Hash[@@genres.group_by{ |v| v }.flat_map{ |k, v| [k, v.size] }]
   end
   
   
   def self.artist_count
-    Hash[*@@artists.group_by{ |v| v }.flat_map{ |k, v| [k, v.size] }]
+    Hash[@@artists.group_by{ |v| v }.flat_map{ |k, v| [k, v.size] }]
   end
   
   
