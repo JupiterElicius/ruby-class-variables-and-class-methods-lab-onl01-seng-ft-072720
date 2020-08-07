@@ -28,7 +28,9 @@
   end
   
   
-  AHSA-WY7S-VTE8-KYKL-B8KB
+  def self.artist_count
+    Hash[*@@artists.group_by{ |v| v }.flat_map{ |k, v| [k, v.size] }]
+  end
   
   
   def self.artist_count
