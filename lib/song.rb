@@ -28,7 +28,7 @@
   end
   
   
-  def self.artist_count
+  def self.genre_count
     Hash[*@@artists.group_by{ |v| v }.flat_map{ |k, v| [k, v.size] }]
   end
   
